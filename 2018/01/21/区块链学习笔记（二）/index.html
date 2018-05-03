@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Zick Shen,ZickShen@gmail.com"><title>区块链学习笔记（二） · Zick's Blog</title><!-- hexo-inject:begin --><!-- hexo-inject:end --><meta name="description" content="学习资料：Decentralizing Privacy: Using Blockchain to Protect Personal Data
+学习笔记：采用原文-自己理解的方式记录，原文部分可能经过拼装。
+
+   　　比特币证明了在金融领域里使用一个节点组成，伴随着公共记账本陪同(accompani"><meta name="keywords" content="Development,BlockChain,Newbie"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Zick's Blog</a></h3><div class="description"><p>Powered and Maintained By ZickShen for records.</p></div></div></div><ul class="social-links"><li><a href="https://zickshen.github.io/"><i class="fa fa-rss"></i></a></li><li><a href="http://github.com/zickshen"><i class="fa fa-github"></i></a></li></ul><div class="footer"><a target="_blank" href="/"><span>Theme by </span></a><a href="https://www.caicai.me"> CaiCai </a><span>&</span><a href="https://github.com/Ben02/hexo-theme-Anatole"> Ben</a><div class="by_farbox"><a href="https://hexo.io/zh-cn/" target="_blank">Proudly published with Hexo&#65281;</a></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">首页</a></li><li><a href="/about">关于</a></li><li><a href="/archives">归档</a></li><li><a href="/links">友链</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div><div class="avatar"><img src="http://wx1.sinaimg.cn/large/73c03d2bgy1fnn5z9e0zrj20s90s944i.jpg"></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>区块链学习笔记（二）</a></h3></div><div class="post-content"><h2 id="学习资料："><a href="#学习资料：" class="headerlink" title="学习资料："></a>学习资料：</h2><p><a href="https://www.computer.org/csdl/proceedings/spw/2015/9933/00/9933a180.pdf" target="_blank" rel="noopener">Decentralizing Privacy: Using Blockchain to Protect Personal Data</a></p>
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><h2 id="学习笔记："><a href="#学习笔记：" class="headerlink" title="学习笔记："></a>学习笔记：</h2><p><strong>采用原文-自己理解的方式记录，原文部分可能经过拼装。</strong></p>
+<blockquote>
+<p>   　　比特币证明了在金融领域里使用一个节点组成，伴随着公共记账本陪同(accompanied by a public ledger)的分布式网络实现可信可审计计算是可能的。在这篇论文中，我们描述了一种分布式的个人数据管理系统，这个系统保证用户拥有并且控制他们自己的数据。我们使用了一种协议，这种协议使用区块链技术作为不需要可信第三方的自动的访问控制管理器。</p>
+</blockquote>
+<p>　　论文综述。</p>
+<blockquote>
+<p>   　　从安全的角度看，研究人员开发了一些针对个人信息的隐私顾虑的技术。数据匿名化方法尝试保护个人的可识别信息。k-匿名(k-anonymity)，匿名数据集的一个共同属性要求每个记录的敏感信息与其他的至少k-1个记录无法区分。(a common property  of anonymized datasets requires that sensitive information of  each record is indistinguishable from at least k−1 other records.)与k匿名相关的拓展有l-多样性(l-diversity)，它保证敏感数据被一个足够多样化的值的集合来表示；以及t-临近(t-closeness,网上没找到译名)，它关注敏感数据的分布。最近的研究说明了怎么样把使用了这些技术的匿名数据集去匿名化，在给出了即使是一个小数量的数据点或者高维数的数据。其他维持隐私的方法包括差分隐私，一种扰乱数据或者在分享数据前的计算过程中加入早上，以及允许在加密数据上进行计算和查询的加密方案。特别指出，完全同态加密(FHE, fully homomorphic encryption)方案允许在加密的数据上进行任何计算，但是现在在目前阶段效率过于低下以至于无法广泛用于实践。</p>
+</blockquote>
+<p>　　现阶段研究综述。</p>
+<blockquote>
+<p>   　　在整篇论文中，我们关注并解决当用户使用第三方服务时面对的隐私忧虑。我们专注于移动平台，在其中服务部署应用程序供用户安装(where services deploy applications for users to install)。这些应用持续地收集高分辨度的个人数据，而对这些数据用户既没有具体的认知又没有控制权限。在我们的分析中，我们假定服务是<em>诚实但好奇的</em>。注意同样的系统也可以用处理其他数据隐私顾虑，比如病人分享他们的医疗数据供科学研究，但同时又拥有监督被使用过程的工具和随时选择退出的能力。有鉴于此，我们的系统将从这些常见的隐私问题中提供保护：</p>
+<p>   　　<strong>数据所有权(Data Ownership)</strong>。我们的框架关注保证用户拥有并能控制他们的个人数据。因此，这个系统将用户视为数据的拥有者，将服务视为有下放许可的访客。</p>
+<p>   　　<strong>数据透明度和可审计性(Data Transparency and Auditability)</strong>。每个用户对其数据是如何收集的以及如何访问的完全知晓。</p>
+<p>   　　<strong>细粒度的访问控制(Fine-grained Access Control)</strong>。移动端应用的一个主要问题是用户需要在注册时授予一组权限。这些许可是无限期授予的，唯一改变协议的方法就是选择退出。相反，在我们的框架中，在任何给定的时间，用户都可以改变权限集合并撤销对以前数据的访问许可。这种机制的一个应用是改善移动应用程序中现有的权限对话框。虽然用户界面可能保持不变，但是访问控制策略将被安全地存储在区块链中，在其中只有用户才能更改他们。</p>
+</blockquote>
+<p>　　诚实但好奇是信息安全中的一个模型，这个模型中参与者有义务遵守协议，但是不会故意在协议执行过程中遗忘已学到的知识(knowledge that it learns)，换句话说，所有参与者都遵守协议。在做出这样的假设后，我们应当意识到，数据隐私问题决不是纯技术问题，必须要技术与立法结合，这样才能使得我们设想的方案落到实处。最后，作者提到的最后一个问题十分吸引我。此外我十分想了解在数据的存储方面能不能提出点什么相关的方案。</p>
+<blockquote>
+<p>   　　我们首先概述我们的系统。 如图1所示，构成我们系统的三个实体是手机用户，有兴趣下载和使用应用程序；服务，这类应用程序的提供者由于运营和商业相关的原因（例如有针对性的广告，个性化服务）需要处理个人数据；节点，委托维护区块链的实体以及分布式私钥值数据存储作为奖励。 注意，虽然系统中的用户通常保持（伪）匿名，但我们可以将服务配置文件存储在区块链中，并验证其身份。</p>
+   <img src="/2018/01/21/区块链学习笔记（二）/snipaste20180122_154420.jpg">
+<p>   　　系统本身设计如下。 区块链接受两种新的交易类型：$T_{access}$，用于访问控制管理; 和$T_{data}$，用于数据存储和检索。 这些网络操作可以很容易地集成到服务可以在开发过程中使用的移动软件开发工具包（SDK）中。</p>
+<p>   　　为了说明这一点，请考虑以下示例：用户安装使用我们的平台来保护其隐私的应用程序。 当用户首次注册时，会生成一个新的共享（用户，服务）身份，并将其与关联的权限用一个$T_{access}$交易发到区块链中。 手机上收集的数据（例如位置等传感器数据）使用共享加密密钥进行加密，然后用一个$T_{data}$交易发送到的区块链，然后将其传送到键值区块链存储区，同时只保留一个指向到公共总帐上数据的指针（指针是数据的SHA-256散列）。</p>
+<p>   　　服务和用户现在都可以使用$T_{data}$事务来查询数据，并且使用与之关联的指针（键）。然后区块链验证数字签名属于用户或服务。对于服务，也检查其访问数据的权限。最后，用户可以随时通过发布具有一组新权限的$T_{access}$事务来更改授予服务的权限，包括撤销对以前存储的数据的访问。开发一个基于网络（或移动）的仪表板，可以对数据进行概述，并且可以更改权限，这与开发集中式钱包（比如用于比特币的Coinbase）类似。 </p>
+<p>   　　与区块链无关的键值存储是Kademilia的一个实现，它是一个分布式散列表（或DHT），增加了使用LevelDB2实现的持久性以及区块链的接口。 DHT由完成批准的读/写事务的节点网络（可能与区块链网络不相交）维护。数据在节点间充分随机化，并进行复制以确保高可用性。注意到替代性的区块链解决方案可以被考虑用于存储是有益的。例如，可以使用集中式云来存储数据。虽然这需要在第三方中获得一定程度的信任，但在可扩展性和易部署方面具有一些优势。</p>
+</blockquote>
+<p>　　$T_{access}$是用户专用的访问权限管理用的交易，而$T_{data}$是服务与用户都可以使用的用于检索和存储数据的交易。数据使用共享密钥加密后使用$T_{data}$交易放到区块链中，保留指向公共总账数据的指针，指针是数据的SHA-256散列值。看到这里我其实有点疑惑，保留的是数据的SHA-256散列值的话，到时候要怎么访问？以及它说的区块链验证以后，怎么把数据转运？</p>
+<blockquote>
+<p>   　　这里我们将提供在区块链上执行的核心协议的详细描述。当接收到$T_{access}$事务时，协议3由网络中的节点执行，类似地，对于$T_{data}$事务执行协议4。</p>
+<p>   　　正如本文前面提到的，$T_{access}$事务允许用户通过发送一个$POLICY_{u,s}$集合来更改授予服务的权限集合。发送空集撤销先前授予的所有访问权。首次发送具有新复合身份标识的$T_{access}$事务被解释为注册到服务的用户。</p>
+<p>   　　同样，$T_{data}$事务管理读/写操作。在$CheckPolicy$的帮助下，只有用户（总是）或服务（如果允许）才能访问数据。请注意，在协议4的第9行和第16行中，我们使用简写符号来访问$DHT$，就像正常的哈希表一样。实际上，这些指令的结果是发送给$DHT$的区块链外网络消息（读取或写入）。</p>
+</blockquote>
+<p>　　算是和预期相符，因为区块链本身的效率比较低下（考虑比特币7hz的交易频率），全部用区块链就是为用而用了。</p>
+<blockquote>
+<p>   　　本文的主要贡献之一就是展示如何克服区块链的公共性。 到目前为止，我们的分析重点是存储指向加密数据的指针。 虽然这种方法适用于存储和随机查询，但处理数据效率不高。 更重要的是，一旦服务查询了一段原始数据，就可以将其存储起来以备将来分析。</p>
+<p>   　　一个更好的方法可能是永远不要让服务观察原始数据，而是让它直接在网络上运行计算并获得最终结果。 如果我们将数据分成共享（例如，使用Shamir的秘密共享协议），而不是对它们进行加密，那么我们就可以使用安全的多方计算（MPC）来安全地评估任何函数。</p>
+</blockquote>
+<p>　　这段必须摘出来的理由正是其第一段所言。</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2018-01-21</span><i class="fa fa-comment-o"></i><a href="/2018/01/21/区块链学习笔记（二）/#comments">评论</a><i class="fa fa-tag"></i><a class="tag" href="/categories/Notes/" title="Notes">Notes </a><a class="tag" href="/tags/blockchain/" title="blockchain">blockchain </a></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" href="http://twitter.com/home?status=,http://yoursite.com/2018/01/21/区块链学习笔记（二）/,Zick's Blog,区块链学习笔记（二）,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2018/02/17/新坑挖填状态/" title="新坑挖填状态">上一篇</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/2018/01/20/区块链学习笔记（一）/" title="区块链学习笔记（一）">下一篇</a></li></ul></div><a id="comments"></a><div id="disqus_thread"></div><script>var disqus_shortname = 'zickshen';
+var disqus_identifier = '2018/01/21/区块链学习笔记（二）/';
+var disqus_title = '区块链学习笔记（二）';
+var disqus_url = 'http://yoursite.com/2018/01/21/区块链学习笔记（二）/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//#{theme.disqus}.disqus.com/count.js" async></script></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end --></body></html>
