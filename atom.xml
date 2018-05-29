@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-08T07:13:33.176Z</updated>
+  <updated>2018-05-29T08:24:29.889Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>告别指南</title>
+    <link href="http://yoursite.com/2018/05/29/%E5%91%8A%E5%88%AB%E6%8C%87%E5%8D%97/"/>
+    <id>http://yoursite.com/2018/05/29/告别指南/</id>
+    <published>2018-05-29T08:19:04.000Z</published>
+    <updated>2018-05-29T08:24:29.889Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;序&quot;&gt;&lt;a href=&quot;#序&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="thoughts" scheme="http://yoursite.com/categories/thoughts/"/>
+    
+    
+      <category term="farewell" scheme="http://yoursite.com/tags/farewell/"/>
+    
+      <category term="goodbye" scheme="http://yoursite.com/tags/goodbye/"/>
+    
+  </entry>
+  
+  <entry>
     <title>完成一个C语言http服务器压力测试工具（三）</title>
     <link href="http://yoursite.com/2018/03/19/%E5%AE%8C%E6%88%90%E4%B8%80%E4%B8%AAC%E8%AF%AD%E8%A8%80http%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%EF%BC%88%E4%B8%89%EF%BC%89/"/>
     <id>http://yoursite.com/2018/03/19/完成一个C语言http服务器压力测试工具（三）/</id>
     <published>2018-03-19T14:09:47.000Z</published>
-    <updated>2018-04-08T07:13:33.176Z</updated>
+    <updated>2018-04-08T07:13:33.000Z</updated>
     
     <summary type="html">
     
@@ -50,7 +78,7 @@
     <link href="http://yoursite.com/2018/03/18/%E5%AE%8C%E6%88%90%E4%B8%80%E4%B8%AAC%E8%AF%AD%E8%A8%80http%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
     <id>http://yoursite.com/2018/03/18/完成一个C语言http服务器压力测试工具（二）/</id>
     <published>2018-03-17T16:26:15.000Z</published>
-    <updated>2018-03-17T17:25:10.782Z</updated>
+    <updated>2018-03-17T17:25:10.000Z</updated>
     
     <summary type="html">
     
@@ -78,7 +106,7 @@
     <link href="http://yoursite.com/2018/03/15/%E5%AE%8C%E6%88%90%E4%B8%80%E4%B8%AAC%E8%AF%AD%E8%A8%80http%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>http://yoursite.com/2018/03/15/完成一个C语言http服务器压力测试工具（一）/</id>
     <published>2018-03-15T14:30:41.000Z</published>
-    <updated>2018-03-19T15:15:59.912Z</updated>
+    <updated>2018-03-19T15:15:59.000Z</updated>
     
     <summary type="html">
     
@@ -107,7 +135,7 @@
     <link href="http://yoursite.com/2018/02/20/Go%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://yoursite.com/2018/02/20/Go学习笔记/</id>
     <published>2018-02-20T09:12:49.000Z</published>
-    <updated>2018-02-20T14:32:39.217Z</updated>
+    <updated>2018-02-20T14:32:39.000Z</updated>
     
     <summary type="html">
     
@@ -133,7 +161,7 @@
     <link href="http://yoursite.com/2018/02/17/%E6%96%B0%E5%9D%91%E6%8C%96%E5%A1%AB%E7%8A%B6%E6%80%81/"/>
     <id>http://yoursite.com/2018/02/17/新坑挖填状态/</id>
     <published>2018-02-17T13:45:15.000Z</published>
-    <updated>2018-05-15T15:31:53.490Z</updated>
+    <updated>2018-05-15T15:31:53.000Z</updated>
     
     <summary type="html">
     
@@ -160,7 +188,7 @@
     <link href="http://yoursite.com/2018/01/21/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
     <id>http://yoursite.com/2018/01/21/区块链学习笔记（二）/</id>
     <published>2018-01-21T11:35:50.000Z</published>
-    <updated>2018-03-15T14:37:10.464Z</updated>
+    <updated>2018-03-15T14:37:10.000Z</updated>
     
     <summary type="html">
     
@@ -186,7 +214,7 @@
     <link href="http://yoursite.com/2018/01/20/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>http://yoursite.com/2018/01/20/区块链学习笔记（一）/</id>
     <published>2018-01-20T08:31:04.000Z</published>
-    <updated>2018-03-15T14:37:24.201Z</updated>
+    <updated>2018-03-15T14:37:24.000Z</updated>
     
     <summary type="html">
     
