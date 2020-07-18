@@ -1,8 +1,0 @@
-# Compile
-
-gcc main.c -lpthread
-
-# Usage
-
-./a.out [thread_count] [concurrent_connections] [total_connection]
-
